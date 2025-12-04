@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我的第一篇文章
+title: 第一篇文章
 categories: 閒聊
 tags: [閒聊]
 ---
