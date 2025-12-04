@@ -1,0 +1,26 @@
+---
+layout: home
+title: UCCU小站
+---
+
+<div class="sidebar">
+    <h2>關於我</h2>
+    <p>我是UCCU，一個興趣使然的碼農，也有滿肚子牢騷。</p>
+
+    <h2>其他文章</h2>
+    <ul>
+        {% for category in site.categories %}
+        <li><a href="/categories/{{ category[0] }}/">{{ category[0] }} ({{ category[1].size }})</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="posts">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+    </ul>
+</div>
