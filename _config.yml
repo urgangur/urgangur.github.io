@@ -14,7 +14,7 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
 
-pagnination:
+pagination:
   enabled: true
   per_page: 10
   permalinks: /categories/:name/:num/
