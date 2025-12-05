@@ -15,7 +15,7 @@
       <h3>其他文章</h3>
       <ul>
         {% for category in site.categories %}
-          <a href="/categories/{{ category[0] }}/index.html">{{ category[0] }} ({{ category[1].size }})</a><br>
+          <li><a href="/categories/{{ category[0] }}/index.html">{{ category[0] }} ({{ category[1].size }})</a></li>
         {% endfor %}
       </ul>
     </div>
