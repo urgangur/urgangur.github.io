@@ -21,5 +21,3 @@ pagnination:
   trail:
     before: 2
     after: 2
-
-destination: docs
