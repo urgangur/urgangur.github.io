@@ -2,7 +2,6 @@
 layout: post
 title: 第一篇文章
 categories: 閒聊
-tags: [閒聊]
 ---
 
 算是先祝賀我自己開了一個blog~，立志成為很厲害的無業遊民。
