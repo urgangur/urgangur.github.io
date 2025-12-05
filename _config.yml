@@ -1,7 +1,6 @@
 title: UCCU小站
 description: UCCU的廢話區
 theme: minima
-baseurl: "/"
 
 plugins:
   - jekyll-feed
