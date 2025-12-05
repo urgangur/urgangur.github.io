@@ -18,12 +18,16 @@ layout: default
 
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}">上一頁</a>
+  {% else %}
+    <span>上一頁</span>
   {% endif %}
 
   <span>第 {{ paginator.page }} 頁 / 共 {{ paginator.total_pages }} 頁</span>
 
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}">下一頁</a>
+  {% else %}
+    <span>下一頁</span>
   {% endif %}
 
 </div>
