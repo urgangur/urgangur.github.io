@@ -7,6 +7,9 @@
 </head>
 <body>
   <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
     <div class="sidebar">
       <h2>關於我</h2>
       <p>我是UCCU，一個興趣使然的碼農，也有滿肚子牢騷。</p>
@@ -17,9 +20,6 @@
           <li><a href="/categories/{{ category[0] }}/">{{ category[0] }} ({{ category[1].size }})</a></li>
         {% endfor %}
       </ul>
-    </div>
-    <div class="content">
-      {{ content }}
     </div>
   </div>
 </body>
