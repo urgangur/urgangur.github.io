@@ -1,6 +1,7 @@
 title: UCCU小站
 description: UCCU的廢話區
 theme: minima
+baseurl: "urgangur.github.io/"
 
 plugins:
   - jekyll-feed
