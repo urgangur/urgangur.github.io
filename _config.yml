@@ -17,7 +17,3 @@ jekyll-archives:
 pagination:
   enabled: true
   per_page: 10
-  permalinks: /categories/:name/:num/
-  trail:
-    before: 2
-    after: 2
