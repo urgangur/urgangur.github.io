@@ -2,31 +2,29 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h2>{{ page.autopages.display_name }}</h2>
 
 <ul>
   {% for post in paginator.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    </li>
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+    <p class="excerpt">{{ post.content | strip_html | truncate: 50 }}</p>
+  </li>
   {% endfor %}
 </ul>
 
 <div class="pagination">
+
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}">上一頁</a>
   {% endif %}
 
-  {% for page_num in (1..paginator.total_pages) %}
-    {% if page_num == paginator.page %}
-      <span>{{ page_num }}</span>
-    {% else %}
-      <a href="{{ paginator.paginate_path | replace: ':num', page_num }}">{{ page_num }}</a>
-    {% endif %}
-  {% endfor %}
+  <span>第 {{ paginator.page }} 頁 / 共 {{ paginator.total_pages }} 頁</span>
 
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}">下一頁</a>
   {% endif %}
+
 </div>
+
