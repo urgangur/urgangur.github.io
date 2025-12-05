@@ -10,10 +10,10 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-  layout: archive
+  layout: category
   permalinks:
     category: /categories/:name/
-
-pagination:
-  enabled: true
-  per_page: 10
+  paginate:
+    enabled: true
+    per_page: 10
+    permalinks: /categories/:name/page/:num/
