@@ -21,6 +21,18 @@ body {
   flex: 5;
   order: 1;
   padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content ul {
+  flex: 1;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
 }
 
 ul {
