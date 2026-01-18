@@ -1,65 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-05T19:13:15+00:00</updated><id>/feed.xml</id><title type="html">UCCU小站</title><subtitle>UCCU的廢話區</subtitle><entry><title type="html">碼農日誌01-androidapp試開發</title><link href="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/01/05/j1.html" rel="alternate" type="text/html" title="碼農日誌01-androidapp試開發" /><published>2026-01-05T00:00:00+00:00</published><updated>2026-01-05T00:00:00+00:00</updated><id>/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/01/05/j1</id><content type="html" xml:base="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/01/05/j1.html"><![CDATA[<p>這幾天第一次嘗試開發安卓的APP，比我想像中麻煩很多，很多的套件都非常不熟悉，然後本來想說要做android10的版本適配，結果做不到我所預期的效果，故作罷。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-18T12:25:27+00:00</updated><id>/feed.xml</id><title type="html">UCCU小站</title><subtitle>UCCU的廢話區</subtitle><entry><title type="html">碼農日誌01-app試開發</title><link href="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/01/05/j1.html" rel="alternate" type="text/html" title="碼農日誌01-app試開發" /><published>2026-01-05T00:00:00+00:00</published><updated>2026-01-05T00:00:00+00:00</updated><id>/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/01/05/j1</id><content type="html" xml:base="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/01/05/j1.html"><![CDATA[<p>這幾天第一次嘗試開發安卓的APP，比我想像中麻煩很多，很多的套件都非常不熟悉，然後本來想說要做android10的版本適配，結果做不到我所預期的效果，故作罷。</p>
 
 <p>我這次開發還先寫了一個proposal，我一開始是很不屑要寫的，但後來覺得這真的很方便，不管是管理預期，又或是直接喂給AI(vibe coding is good)。有意思的是，AI在當PM這方面確實很有天分，殘酷無情又不怕被我罵。</p>
 
 <p>或許下次該挑戰難一點的專案了。</p>
 
-<p>相片管理工具計畫書</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>相片管理工具計畫書
 
-<p>一、遇到之問題</p>
-<ol>
-  <li>google play商店現有能下載工具幾乎都須付費、有廣告或是UI設計過亂，在整理相簿的這種關鍵問題上又顯得很難用。比如像是需要多次選擇、確認，造成手感不好。</li>
-  <li>我只是想要快速刪除我不想要占空間的相片</li>
-</ol>
+一、遇到之問題
+1. google play商店現有能下載工具幾乎都須付費、有廣告或是UI設計過亂，在整理相簿的這種關鍵問題上又顯得很難用。比如像是需要多次選擇、確認，造成手感不好。
+2. 我只是想要快速刪除我不想要占空間的相片
 
-<p>二、預期目標
-須達成:</p>
-<ol>
-  <li>極簡化的相片刪除
-    <ul>
-      <li>利用左右滑動來決定照片是否要留存</li>
-      <li>為了避免誤選，被剔除的照片會先進垃圾桶，等待最後清空整個垃圾桶</li>
-    </ul>
-  </li>
-  <li>產品目標在於優化決策「是否刪除該照片」的速度</li>
-</ol>
+二、預期目標
+須達成:
+1. 極簡化的相片刪除
+    - 利用左右滑動來決定照片是否要留存
+    - 為了避免誤選，被剔除的照片會先進垃圾桶，等待最後清空整個垃圾桶
+2. 產品目標在於優化決策「是否刪除該照片」的速度
 
-<p>完全不做:</p>
-<ol>
-  <li>雲端</li>
-  <li>登入</li>
-  <li>AI</li>
-  <li>廣告</li>
-</ol>
+完全不做:
+1. 雲端
+2. 登入
+3. AI
+4. 廣告
 
-<p>三、技術選型
+三、技術選型
 平台: android
 語言: kotlin等
 相片存取: MediaStore
-狀態資料: 本地DB</p>
+狀態資料: 本地DB
 
-<p>四、開發時程
+四、開發時程
 week 1: 相片掃描 + 基本列表顯示
 week 2: 核心功能-&gt;滑動刪留與垃圾桶
-week 3: UI/UX improve + 效能處理</p>
+week 3: UI/UX improve + 效能處理 
 
-<p>五、完成結果</p>
+五、完成結果
+1. 能正確掃瞄出我所擁有的照片
+2. 能在10分鐘內處理200張相片
+3. 無網路、無廣告、無付費內容
+4. 我自己願意使用
+</code></pre></div></div>]]></content><author><name></name></author><category term="碼農日誌" /><summary type="html"><![CDATA[這幾天第一次嘗試開發安卓的APP，比我想像中麻煩很多，很多的套件都非常不熟悉，然後本來想說要做android10的版本適配，結果做不到我所預期的效果，故作罷。]]></summary></entry><entry><title type="html">abycity開發日誌02</title><link href="/abycity/2026/01/03/gd2.html" rel="alternate" type="text/html" title="abycity開發日誌02" /><published>2026-01-03T00:00:00+00:00</published><updated>2026-01-03T00:00:00+00:00</updated><id>/abycity/2026/01/03/gd2</id><content type="html" xml:base="/abycity/2026/01/03/gd2.html"><![CDATA[<p>在itch.io和f95騷了兩圈以後，和我玩遊戲那麼久的經驗，我算總結幾點這種類型遊戲須避免的地方(雖然有幾點應該會很像廢話)：</p>
+
 <ol>
-  <li>能正確掃瞄出我所擁有的照片</li>
-  <li>能在10分鐘內處理200張相片</li>
-  <li>無網路、無廣告、無付費內容</li>
-  <li>我自己願意使用</li>
-</ol>]]></content><author><name></name></author><category term="碼農日誌" /><summary type="html"><![CDATA[這幾天第一次嘗試開發安卓的APP，比我想像中麻煩很多，很多的套件都非常不熟悉，然後本來想說要做android10的版本適配，結果做不到我所預期的效果，故作罷。]]></summary></entry><entry><title type="html">abycity開發日誌02</title><link href="/abycity/2026/01/03/gd2.html" rel="alternate" type="text/html" title="abycity開發日誌02" /><published>2026-01-03T00:00:00+00:00</published><updated>2026-01-03T00:00:00+00:00</updated><id>/abycity/2026/01/03/gd2</id><content type="html" xml:base="/abycity/2026/01/03/gd2.html"><![CDATA[<p>在itch.io和f95騷了兩圈以後，和我玩遊戲那麼久的經驗，我算總結幾點這種類型遊戲須避免的地方(雖然有幾點應該會很像廢話)：</p>
-<ol>
-  <li>繁複的刷數值卻沒有變化的橋段，我是覺得刷數值沒有不好的地方，好的刷數值應該要是讓玩家引入到新的遊戲支線，但是只是純粹在那邊只顯示幾行文字說什麼什麼增加了就是很躁。而且數值應該在看到名稱時，要讓玩家產生對這個數值變動以後我能多做什麼事情的期待，而不是單純達到某個目標而已。</li>
-  <li>不方便的UI設計，像是左右sidebar填充大量沒有營養的東西，應該要是幾個明確的按鈕導入到資訊密集的地方就好，玩家不需要知道的資訊也沒必要把他們放在容易獲取的地方。我想會願意玩text-based的玩家其實都很能接受遊戲UI偏向簡陋，不用為了增添風味在那邊設計各種按鈕、五顏六色的玩意，大多時候在體驗上只是惱人的。</li>
-  <li>沒有帶入感的主角，很多遊戲為了偷懶省略了很多捏腳色的環節，或是讓玩家能自由選擇行動的環節，就會形成嚴重的割裂而色不下去的感覺。我覺得text-based遊戲的優勢就於，容易創造不同的遊戲分支，若在這種地方還要偷懶就真的不然去玩視覺小說。</li>
+  <li>
+    <p>繁複的刷數值卻沒有變化的橋段，我是覺得刷數值沒有不好的地方，好的刷數值應該要是讓玩家引入到新的遊戲支線，但是只是純粹在那邊只顯示幾行文字說什麼什麼增加了就是很躁。而且數值應該在看到名稱時，要讓玩家產生對這個數值變動以後我能多做什麼事情的期待，而不是單純達到某個目標而已。</p>
+  </li>
+  <li>
+    <p>不方便的UI設計，像是左右sidebar填充大量沒有營養的東西，應該要是幾個明確的按鈕導入到資訊密集的地方就好，玩家不需要知道的資訊也沒必要把他們放在容易獲取的地方。我想會願意玩text-based的玩家其實都很能接受遊戲UI偏向簡陋，不用為了增添風味在那邊設計各種按鈕、五顏六色的玩意，大多時候在體驗上只是惱人的。</p>
+  </li>
+  <li>
+    <p>沒有帶入感的主角，很多遊戲為了偷懶省略了很多捏腳色的環節，或是讓玩家能自由選擇行動的環節，就會形成嚴重的割裂而色不下去的感覺。我覺得text-based遊戲的優勢就於，容易創造不同的遊戲分支，若在這種地方還要偷懶就真的不然去玩視覺小說。</p>
+  </li>
 </ol>
 
 <p>不過說真的，最重要的是，劇情量過少才是痛中之痛。
 離上次日誌過了很久，因為實在是沒有在開發，整個人像是染了點精神病完全沒有動力做事情，最近幾天才重拾了一些決意(多少也是被網路上的劣質品氣的)。</p>
 
-<p>最近應該會先把整個UI設計好，然後把TODO list上的事情做完就能上線v0.1.0版收獲些回饋了。</p>]]></content><author><name></name></author><category term="abycity" /><summary type="html"><![CDATA[在itch.io和f95騷了兩圈以後，和我玩遊戲那麼久的經驗，我算總結幾點這種類型遊戲須避免的地方(雖然有幾點應該會很像廢話)： 繁複的刷數值卻沒有變化的橋段，我是覺得刷數值沒有不好的地方，好的刷數值應該要是讓玩家引入到新的遊戲支線，但是只是純粹在那邊只顯示幾行文字說什麼什麼增加了就是很躁。而且數值應該在看到名稱時，要讓玩家產生對這個數值變動以後我能多做什麼事情的期待，而不是單純達到某個目標而已。 不方便的UI設計，像是左右sidebar填充大量沒有營養的東西，應該要是幾個明確的按鈕導入到資訊密集的地方就好，玩家不需要知道的資訊也沒必要把他們放在容易獲取的地方。我想會願意玩text-based的玩家其實都很能接受遊戲UI偏向簡陋，不用為了增添風味在那邊設計各種按鈕、五顏六色的玩意，大多時候在體驗上只是惱人的。 沒有帶入感的主角，很多遊戲為了偷懶省略了很多捏腳色的環節，或是讓玩家能自由選擇行動的環節，就會形成嚴重的割裂而色不下去的感覺。我覺得text-based遊戲的優勢就於，容易創造不同的遊戲分支，若在這種地方還要偷懶就真的不然去玩視覺小說。]]></summary></entry><entry><title type="html">abycity開發日誌01</title><link href="/abycity/2025/12/05/gd1.html" rel="alternate" type="text/html" title="abycity開發日誌01" /><published>2025-12-05T00:00:00+00:00</published><updated>2025-12-05T00:00:00+00:00</updated><id>/abycity/2025/12/05/gd1</id><content type="html" xml:base="/abycity/2025/12/05/gd1.html"><![CDATA[<p>想做這遊戲有90%的原因是degrees of lewdity，一個劇情很多的中自由度文字黃遊(盡管他黃色部分做的蠻鳥的)，剛接觸那個遊戲的時候沉溺一段時間，各種人物的劇情都很想跑過一遍，後面也因此接觸了BDCC、莉莉絲的王座、era系列等等。但等待這些遊戲更新實在太牢了，所以，不如自己煮大飯。</p>
+<p>最近應該會先把整個UI設計好，然後把TODO list上的事情做完就能上線v0.1.0版收獲些回饋了。</p>]]></content><author><name></name></author><category term="abycity" /><summary type="html"><![CDATA[在itch.io和f95騷了兩圈以後，和我玩遊戲那麼久的經驗，我算總結幾點這種類型遊戲須避免的地方(雖然有幾點應該會很像廢話)：]]></summary></entry><entry><title type="html">abycity開發日誌01</title><link href="/abycity/2025/12/05/gd1.html" rel="alternate" type="text/html" title="abycity開發日誌01" /><published>2025-12-05T00:00:00+00:00</published><updated>2025-12-05T00:00:00+00:00</updated><id>/abycity/2025/12/05/gd1</id><content type="html" xml:base="/abycity/2025/12/05/gd1.html"><![CDATA[<p>想做這遊戲有90%的原因是degrees of lewdity，一個劇情很多的中自由度文字黃遊(盡管他黃色部分做的蠻鳥的)，剛接觸那個遊戲的時候沉溺一段時間，各種人物的劇情都很想跑過一遍，後面也因此接觸了BDCC、莉莉絲的王座、era系列等等。但等待這些遊戲更新實在太牢了，所以，不如自己煮大飯。</p>
 
 <p>abycity，aka淵城，是一個在深淵旁邊進行礦業活動的中心城市，主角是一位在失憶中漂流來到這城鎮的人，以此引發一系列的故事。當然這遊戲對標dol，也是要有色色跟劇情，前期目標是根據玩家高自由度的選擇，整個世界能有非常多樣化的變化，有種模擬在異世界重生的感覺。另一方面，我也想在這遊戲在戰鬥系統上有所特色，初期想法是根據玩家的選擇，玩家會獲得各種不一樣的特質，進而影響可以戰鬥的方式，不管是物理上或是精神上的。</p>
 
