@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-27T06:18:48+00:00</updated><id>/feed.xml</id><title type="html">UCCU小站</title><subtitle>UCCU的廢話區</subtitle><entry><title type="html">abycity開發日誌03</title><link href="/abycity/2026/01/27/gd3.html" rel="alternate" type="text/html" title="abycity開發日誌03" /><published>2026-01-27T00:00:00+00:00</published><updated>2026-01-27T00:00:00+00:00</updated><id>/abycity/2026/01/27/gd3</id><content type="html" xml:base="/abycity/2026/01/27/gd3.html"><![CDATA[<p>很快的將會有一個v0.1.0的版本釋出。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-04-15T11:21:32+00:00</updated><id>/feed.xml</id><title type="html">UCCU小站</title><subtitle>UCCU的廢話區</subtitle><entry><title type="html">abycity開發日誌04</title><link href="/abycity/2026/04/15/gd4.html" rel="alternate" type="text/html" title="abycity開發日誌04" /><published>2026-04-15T00:00:00+00:00</published><updated>2026-04-15T00:00:00+00:00</updated><id>/abycity/2026/04/15/gd4</id><content type="html" xml:base="/abycity/2026/04/15/gd4.html"><![CDATA[<p>上次更新說到很快就有發佈，不過後來各種原因，我就暫停了開發。</p>
+
+<p>現在決定是將舊有的遊戲內容以新的形式轉移到新專案上，並且也會把遊戲引擎從twine搬到我最近在編寫的salttriangle上。</p>
+
+<p>大概是這樣。</p>
+
+<p>當然新專案也會是abycity的穢土轉生，畢竟我都把設定跟世界觀寫好了。</p>]]></content><author><name></name></author><category term="abycity" /><summary type="html"><![CDATA[上次更新說到很快就有發佈，不過後來各種原因，我就暫停了開發。]]></summary></entry><entry><title type="html">碼農日誌02-遊戲引擎開發</title><link href="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/04/15/j2.html" rel="alternate" type="text/html" title="碼農日誌02-遊戲引擎開發" /><published>2026-04-15T00:00:00+00:00</published><updated>2026-04-15T00:00:00+00:00</updated><id>/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/04/15/j2</id><content type="html" xml:base="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/04/15/j2.html"><![CDATA[<p>這一個月多斷斷續續在編寫一個遊戲引擎，主要目的是做出一個twine-sugarcube的替代品，不然實在搜文字網頁遊戲時，全部都一樣的長相實在是令人無言。我不希望寫出來的東西是某種拙劣的模仿，所以我期待的編寫模式是擴展性更好的(或是更加程序員的)，省略了很多我覺得不必要的宣言形式，像是重複一些javascript就能做到的事情，並把邏輯和渲染更加的分開，並增添了layout模式，讓編輯passage的外觀更加容易。</p>
+
+<p>我對於javascript實在是沒有太熟，又是第一次去處理lexer、ast parser等等之類的，開發過程跟AI交流debug時實在是很想捶桌子，不過其實也是非常順利的寫完一半的邏輯了。</p>
+
+<p>上次由實戰學習kotlin實在是成效非常不彰，完全不知道在幹嘛。這次我覺得學了蠻多東西的，只能說javascript就是最好的語言(bushi)。</p>
+
+<p>下個實戰項目，是想搞一個用來做DC群組年度回顧的機器人。萬物皆要年度回顧!</p>]]></content><author><name></name></author><category term="碼農日誌" /><summary type="html"><![CDATA[這一個月多斷斷續續在編寫一個遊戲引擎，主要目的是做出一個twine-sugarcube的替代品，不然實在搜文字網頁遊戲時，全部都一樣的長相實在是令人無言。我不希望寫出來的東西是某種拙劣的模仿，所以我期待的編寫模式是擴展性更好的(或是更加程序員的)，省略了很多我覺得不必要的宣言形式，像是重複一些javascript就能做到的事情，並把邏輯和渲染更加的分開，並增添了layout模式，讓編輯passage的外觀更加容易。]]></summary></entry><entry><title type="html">abycity開發日誌03</title><link href="/abycity/2026/01/27/gd3.html" rel="alternate" type="text/html" title="abycity開發日誌03" /><published>2026-01-27T00:00:00+00:00</published><updated>2026-01-27T00:00:00+00:00</updated><id>/abycity/2026/01/27/gd3</id><content type="html" xml:base="/abycity/2026/01/27/gd3.html"><![CDATA[<p>很快的將會有一個v0.1.0的版本釋出。</p>
 
 <p>將包含的內容有：</p>
 <ul>
