@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-05-13T17:14:34+00:00</updated><id>/feed.xml</id><title type="html">UCCU小站</title><subtitle>UCCU的廢話區</subtitle><entry><title type="html">碼農日誌03-遊戲引擎開發(續)</title><link href="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/05/04/jr3.html" rel="alternate" type="text/html" title="碼農日誌03-遊戲引擎開發(續)" /><published>2026-05-04T00:00:00+00:00</published><updated>2026-05-04T00:00:00+00:00</updated><id>/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/05/04/jr3</id><content type="html" xml:base="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/05/04/jr3.html"><![CDATA[<p>過了三個禮拜，我基本上是把最基礎的東西都處理完了，然後把bug和一些新功能也打上去了，v0.1.2(還v0.1.3)正式發布。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-06-01T08:41:44+00:00</updated><id>/feed.xml</id><title type="html">UCCU小站</title><subtitle>UCCU的廢話區</subtitle><entry><title type="html">碼農日誌03-遊戲引擎開發(續續)</title><link href="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/06/01/jr4.html" rel="alternate" type="text/html" title="碼農日誌03-遊戲引擎開發(續續)" /><published>2026-06-01T00:00:00+00:00</published><updated>2026-06-01T00:00:00+00:00</updated><id>/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/06/01/jr4</id><content type="html" xml:base="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/06/01/jr4.html"><![CDATA[<p>目前做到v0.5.0算是把要用的功能都做完了，基本上一般的sugarcube遊戲都可以移植上來。</p>
+
+<p>其實好像也什麼特別的心得，因為架構寫完，之後填充東西的時候根本沒用什麼腦袋。</p>
+
+<p>列一張需要做，但我懶得做的表來水字數：</p>
+<ul>
+  <li>增加不同遊戲的localstore存檔應該分開，目前會互相影響</li>
+  <li>增加更好的錯誤檢查，應該要指出檔名跟行數</li>
+  <li>更好的編譯前檢查，像是空LINK之類的</li>
+  <li>更好的統計功能</li>
+  <li>更方便的hook</li>
+  <li>更好的渲染</li>
+  <li>內建音檔支持</li>
+  <li>import存檔加密、壓縮</li>
+  <li>文檔</li>
+  <li>模板</li>
+</ul>]]></content><author><name></name></author><category term="碼農日誌" /><summary type="html"><![CDATA[目前做到v0.5.0算是把要用的功能都做完了，基本上一般的sugarcube遊戲都可以移植上來。]]></summary></entry><entry><title type="html">abycity開發日誌05-新版開始</title><link href="/abycity/2026/05/14/gd5.html" rel="alternate" type="text/html" title="abycity開發日誌05-新版開始" /><published>2026-05-14T00:00:00+00:00</published><updated>2026-05-14T00:00:00+00:00</updated><id>/abycity/2026/05/14/gd5</id><content type="html" xml:base="/abycity/2026/05/14/gd5.html"><![CDATA[<p>基本上，我把舊有的內容大部份都移植到salttriangle引擎上了，也花時間把大部分的版面設計給做完，所以又到了喜聞樂見的內容填充環節。</p>
+
+<p>既然這是一個新的開始，就來把之前的內容與新東西一起做個總結吧。</p>
+
+<p>abycity，又名淵城，是一款以文字冒險角色扮演遊戲，主角是因某些緣故而標流至此，而展開後續的故事。本遊戲的模式深受以下遊戲的啟發：Degrees Of Lewdity、Lilith’s Throne、era系列，強烈推薦可以嘗試一下(除了era系列，這口味有點驚人)。</p>
+
+<hr />
+<p>第二次世界大戰結束以後，世界的動盪並沒有因此平息下來，因為一道平均深度深達兩公里多的極長峽谷突然出現在了太平洋西部，被世人稱作「大裂隙」。在眾多探險隊的探查之下，於峽谷底部發現到了一種全新的礦產——瘤礦，又名血輝石，而此物質的存在超越了科學所能理解的框架。</p>
+
+<p>不久，一名科學家自稱接受到了來自上天的啟示，發展出了一套能從瘤礦中提取出毀滅性能量的方法。於是，以搶奪大裂隙周圍地區開始的能源革命打響了第三次世界大戰的第一槍。在戰爭歷經六年後，蘇聯向合約國多個地區投下了核武器，於是很快的，戰爭演變成無法停下的核戰爭。世界在核子武器肆虐下，所有的政體、經濟體都土崩瓦解，剩餘的人類在零星未受到輻射嚴重影響的地區，建立起眾多的城邦。</p>
+
+<p>於是，在裂隙旁的交通樞紐，淵城，誕生了。</p>
+
+<hr />
+
+<p>abycity的世界基本上是現實世界的魔幻版本，這個世界真的有一些亞人(貓人之類的)，不過基本上是屬於非常低魔的，沒有什麼奇怪的魔法。其實原本也沒想設計有異種族，但我就是想寫貓娘，或是狐娘。</p>]]></content><author><name></name></author><category term="abycity" /><summary type="html"><![CDATA[基本上，我把舊有的內容大部份都移植到salttriangle引擎上了，也花時間把大部分的版面設計給做完，所以又到了喜聞樂見的內容填充環節。]]></summary></entry><entry><title type="html">碼農日誌03-遊戲引擎開發(續)</title><link href="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/05/04/jr3.html" rel="alternate" type="text/html" title="碼農日誌03-遊戲引擎開發(續)" /><published>2026-05-04T00:00:00+00:00</published><updated>2026-05-04T00:00:00+00:00</updated><id>/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/05/04/jr3</id><content type="html" xml:base="/%E7%A2%BC%E8%BE%B2%E6%97%A5%E8%AA%8C/2026/05/04/jr3.html"><![CDATA[<p>過了三個禮拜，我基本上是把最基礎的東西都處理完了，然後把bug和一些新功能也打上去了，v0.1.2(還v0.1.3)正式發布。</p>
 
 <p>用起來感覺還是很舒服的(自己吹)，反正算是解決我用sugarcube很多不爽的點，就是有點燒腦袋。</p>
 
