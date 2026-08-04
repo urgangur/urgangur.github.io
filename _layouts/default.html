@@ -6,18 +6,32 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="content">
-      {{ content }}
-    </div>
-    <div class="sidebar">
-      <a href="https://urgangur.github.io/">回到首頁</a><br>
-      <h3>其他文章</h3>
-      <ul>
-        {% for category in site.categories %}
-          <li><a href="/categories/{{ category[0] }}/index.html">{{ category[0] }} ({{ category[1].size }})</a></li>
-        {% endfor %}
-      </ul>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="header-container">
+        <a class="site-title" href="/">{{ site.title }}</a>
+        <span class="site-description">{{ site.description }}</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <main class="content">
+        {{ content }}
+      </main>
+      <aside class="sidebar">
+        <a href="/" class="back-home">回到首頁</a>
+        <h3>文章分類</h3>
+        <ul class="category-list">
+          {% for category in site.categories %}
+            <li>
+              <a href="/categories/{{ category[0] }}/index.html">
+                <span class="cat-name">{{ category[0] }}</span>
+                <span class="cat-count">({{ category[1].size }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </aside>
     </div>
   </div>
 </body>
