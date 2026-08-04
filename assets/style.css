@@ -35,37 +35,6 @@ body {
   padding: 40px 24px;
 }
 
-/* Site Header */
-.site-header {
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 24px;
-  margin-bottom: 32px;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.site-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  text-decoration: none;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
-}
-
-.site-title:hover {
-  color: var(--primary-color);
-}
-
-.site-description {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-}
-
 /* Main Container Grid */
 .container {
   display: flex;
